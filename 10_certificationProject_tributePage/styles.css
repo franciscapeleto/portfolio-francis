@@ -1,0 +1,90 @@
+#page {
+  background-color: #f2e7e7f6;
+  width: auto;
+  max-width: 90rem;
+  padding: 20px;
+  margin: auto;
+  border-radius: 40px;
+
+}
+body {
+  background-color: #010120;
+  margin: 30px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+h1, h2, p, figcaption {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 20px;  
+}
+
+#tribute-info {
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+#img-div {
+  background: #010120;
+  padding: 15px;
+  margin: 0; 
+  border-radius: 20px;  
+}
+
+#image {  
+  display: block;  
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin: 0 auto; 
+  padding: 0;
+  border-radius: 10px;  
+  box-shadow: 0 0 5px 5px #f2e7e7f6;
+}
+
+figcaption {
+  display: block;
+  color: #f2e7e7f6;   
+  margin: 15px 0 0 0;  
+  padding: 0;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+li {
+  margin: 20px auto;
+  font-size: 0.9em;
+}
+
+hr {
+  background-color: #010120;
+  height: 3px;
+  border: none;
+}
+
+#bottom-line{
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+#footer {
+  padding: 0;
+  margin: 10px auto 0 auto;
+  max-width: 80rem;
+}
+
+a {
+  color: #010120;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #010120;
+  color: #f2e7e7f6;
+}

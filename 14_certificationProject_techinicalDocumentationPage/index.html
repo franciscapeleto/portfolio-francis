@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Java Flow Control</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header id="main-header">
+      <h1>Java Flow Control</h1>
+    </header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#if...else_statement">
+          if...else statement
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Switch_case_statement">
+          Switch case statement
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#for_loop">
+          for loop
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#while_loop">
+          while loop
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#do-while_loop">
+          do-while loop
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#continue_statement">
+          continue statement
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#break_statement">
+          break statement
+        </a>
+      </li>      
+      <li>
+        <a class="nav-link" href="#Reference">
+          Reference
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="if...else_statement">
+      <header>
+        <h2>if...else statement</h2>
+      </header>
+      <p>
+        When we need to execute a set of statements based on a condition then we need to use control flow statements. For example, if a number is greater than zero then we want to print “Positive Number” but if it is less than zero then we want to print “Negative Number”. In this case we have two print statements in the program, but only one print statement executes at a time based on the input value. We will see how to write such type of conditions in the java program using control statements.
+      </p>
+      <p>
+        In this tutorial, we will see four types of control statements that you can use in java programs based on the requirement: In this tutorial we will cover following conditional statements:
+      </p>
+      <ul>
+        <li>
+          if statement
+            <pre>
+              <code>if(condition){
+Statement(s);
+}               </code>
+            </pre>
+        </li>
+        <li>
+          nested if statement
+          <pre>
+            <code>if(condition_1) {
+Statement1(s);
+
+if(condition_2) {
+  Statement2(s);
+}
+}             </code>
+          </pre>
+        <li>
+          if-else statement
+          <pre>
+            <code>if(condition) {
+Statement(s);
+}
+else {
+Statement(s);
+}             </code>
+          </pre>
+        <li>
+          if-else-if statement
+          <pre>
+            <code>if(condition_1) {
+/*if condition_1 is true execute this*/
+statement(s);
+}
+else if(condition_2) {
+/* execute this if condition_1 is not met and
+* condition_2 is met
+*/  statement(s);
+}
+else if(condition_3) {
+/* execute this if condition_1 & condition_2 are
+* not met and condition_3 is met
+*/
+statement(s);
+}
+.
+.
+.
+else {
+/* if none of the condition is true
+* then these statements gets executed
+*/
+statement(s);
+}             </code>
+          </pre>
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="Switch_case_statement">
+      <header>
+        <h2>Switch case statement</h2>
+      </header>
+      <p>Switch case statement is used when we have number of options (or choices) and we may need to perform a different task for each choice.</p>
+      <p>The syntax of Switch case statement looks like this:</p> 
+        <pre>
+          <code>switch (variable or an integer expression)
+{
+  case constant:
+  //Java code
+  ;
+  case constant:
+  //Java code
+  ;
+  default:
+  //Java code
+  ;
+}         </code>
+        </pre>
+      <ul>
+        <li>
+          Switch Case statement is mostly used with break statement even though it is optional. We will first see an example without break statement and then we will discuss switch case with break
+        </li>          
+      </ul>
+    </section>
+    <section class="main-section" id="for_loop">
+      <header>
+        <h2>for loop</h2>
+      </header>
+      <p>
+        For loop is used to execute a set of statements repeatedly until a particular condition returns false. In Java we have three types of basic loops: for, while and do-while. In this tutorial you will learn about for loop in Java.
+      </p>
+      <pre>
+        <code>for(initialization; condition ; increment/decrement)
+{
+  statement(s);
+}       </code>
+      </pre>
+      <p><strong>Initialization:</strong> In the initialization part, variables like loop counter (you will generally see i and j in loops, these are the loop counters) are initialized. This is an optional part of the loop as the variables can be initialized before the loop. This executes only once when the loop starts.</p>
+      <p><strong>Condition:</strong> This is one of the important part of the loop. This condition determines till when the loop should keep repeating. The loop keeps repeating until the condition becomes false.</p>
+      <p><strong>Increment/Decrement:</strong> In this part of the loop declaration, you can specify the increment or decrement of loop counter. This is to modify the loop counter value so that at one point condition becomes false and the loop ends.</p>
+      <p><strong>Statement:</strong> The statements inside the loop body keeps executing for each iteration of the loop until the loop stops.</p>
+    </section>
+    <section class="main-section" id="while_loop">
+      <header>
+        <h2>while loop</h2>
+      </header>
+      <p>In this tutorial, you will learn while loop in java with the help of examples. Similar to for loop, the while loop is used to execute a set of statements repeatedly until the specified condition returns false.</p>
+      <pre>
+        <code>while(condition)
+{
+  statement(s); //block of code
+}       </code>
+      </pre>
+      <p>The block of code inside the body (content inside curly braces) of while loop executes repeatedly until the condition returns false.</p>
+    </section>
+    <section class="main-section" id="do-while_loop">
+      <header>
+        <h2>do-while loop</h2>
+      </header>    
+      <p>
+        In the last tutorial, we discussed while loop. In this tutorial we will discuss do-while loop in java. do-while loop is similar to while loop, however there is a difference between them: In while loop, condition is evaluated before the execution of loop’s body but in do-while loop condition is evaluated after the execution of loop’s body.
+      </p>
+      <pre>
+        <code>do
+  {
+    statement(s);
+  } while(condition);</code>
+      </pre>
+    </section>
+    <section class="main-section" id="continue_statement">
+      <header>
+        <h2>continue statement</h2>
+      </header>
+      <p>
+        Continue statement is mostly used inside loops. Whenever it is encountered inside a loop, control directly jumps to the beginning of the loop for next iteration, skipping the execution of statements inside loop’s body for the current iteration. This is particularly useful when you want to continue the loop but do not want the rest of the statements(after continue statement) in loop body to execute for that particular iteration.
+      </p>
+      <p>
+        Syntax: continue word followed by semi colon.
+      </p>
+      <pre>
+        <code>continue;</code>
+      </pre>
+    </section>
+    <section class="main-section" id="break_statement">
+      <header>
+        <h2>break statement</h2>
+      </header>
+      <p>The break statement is usually used in following two scenarios:</p>
+      <ul>
+        <li>Use break statement to come out of the loop instantly. Whenever a break statement is encountered inside a loop, the control directly comes out of loop and the loop gets terminated for rest of the iterations. It is used along with if statement, whenever used inside loop so that the loop gets terminated for a particular condition.          
+        <p><em>The important point to note here is that when a break statement is used inside a nested loop, then only the inner loop gets terminated.</em></p></li>        
+        <li>It is also used in switch case control. Generally all cases in switch case are followed by a break statement so that whenever the program control jumps to a case, it doesn’t execute subsequent cases (see the example below). As soon as a break is encountered in switch-case block, the control comes out of the switch-case body.</li>
+      </ul>
+      <p>
+        Syntax: break word followed by semi colon.
+      </p>
+      <pre>
+        <code>break;</code>
+      </pre>        
+    </section> 
+    <section class="main-section" id="Reference">
+      <header>
+        <h2>Reference</h2>
+      </header>
+      <p>
+        All the documentation in this page is taken from
+        <a id="link-reference"
+          href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/"
+          target="_blank"
+          >BeginnersBook</a
+        >
+      </p>          
+    </section>
+  </main>  
+</body>
+</html>

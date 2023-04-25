@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gaming Questionnaire</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>  
+    <div class="container">
+      <header>
+        <h1 id="title">Gaming Questionnaire</h1>
+        <p id="description">
+          Thank you for taking a minute to help me to developer my game.
+        </p>
+      </header>
+      <hr>
+      <form id="survey-form" method="post">
+        <div id="name-div">
+          <label id="name-label" for="name">Name</label>
+          <input class="details" id="name" name="name" type="text" placeholder="Enter your name" required>          
+        </div>
+        <div id="email-div"> 
+          <label for="email" id="email-label">Email</label>
+          <input class="details" id="email" name="email" type="email" placeholder="Enter your Email" required>
+        </div>
+        <div id="number-div">
+          <label for="number" id="number-label">Age (optional)</label>
+          <input class="details" id="number" type="number" name="number" min="5" max="100" placeholder="Enter your age">
+        </div>
+        <div id="favouriteConsole-div">
+          <p id="favouriteConsole">What are your favourite gaming console?</p>
+          <select id="dropdown" name="dropdown">
+            <option value="select">
+              (select one gaming platforms)
+            </option>
+            <option value="playStation">
+              PlayStation
+            </option>
+            <option value="xboxOne">
+              Xbox
+            </option>
+            <option value="nintendoSwitch">
+              Nintendo
+            </option>
+            <option value="PC">
+              PC
+            </option>
+          </select>
+        </div>
+        <div id="payPerGame-div">
+          <p class="pay">How much are you willing to pay per game?</p>
+          <label class="payPerGame" for="lessThen20">
+            <input
+              value="lessThen20"
+              id="lessThen20"
+              type="radio"
+              name="payPerGame"
+              class="inline">
+            Less than &#8364;20
+          </label>
+          <label class="payPerGame" for="lessThen40">
+            <input 
+              value="lessThen40" 
+              id="lessThen40" 
+              type="radio" 
+              name="payPerGame" 
+              class="inline">
+            Less than &#8364;40
+          </label>
+          <label class="payPerGame" for="lessThen60">
+            <input 
+              value="lessThen60" 
+              id="lessThen60" 
+              type="radio" 
+              name="payPerGame" 
+              class="inline">
+            Less than &#8364;60
+          </label>
+          <label class="payPerGame" for="moreThen60">
+            <input 
+              value="moreThen60" 
+              id="moreThen60" 
+              type="radio" 
+              name="payPerGame" 
+              class="inline">
+            Greater than or equal to &#8364;60
+          </label>
+        </div>
+        <div id="gameGenres-div">
+          <p class="genres">What are your favourite game genres? (select 01 or more options)</p>
+          <div>
+            <label for="fighting">
+              <input value="fighting" id="fighting" type="checkbox"  name="gameGenres" class="gameGenres"> Fighting
+            </label>
+            <label for="racing">
+              <input value="racing" id="racing" type="checkbox" name="gameGenres" class="gameGenres">
+              Racing
+            </label>
+            <label for="sports">
+              <input value="sports" id="sports" type="checkbox" name="gameGenres" class="gameGenres">
+              Sports
+            </label>
+            <label for="strategy">
+              <input value="strategy" id="strategy" type="checkbox" name="gameGenres" class="gameGenres"> Strategy
+            </label>
+            <label for="simulation">
+              <input value="simulation" id="simulation" type="checkbox" name="gameGenres" class="gameGenres"> Simulation
+            </label>
+            <label for="adventure">
+              <input value="adventure" id="adventure" type="checkbox" name="gameGenres" class="gameGenres"> Adventure
+            </label>
+          </div>
+        </div>          
+        <div id="suggestion-div">
+          <p class="develop">What would the game you develop be like?</p>
+          <textarea id="suggestion" name="suggestion" rows="5" cols="30" placeholder="Enter your suggestion"></textarea>
+        </div>
+        <div id="submit-div">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>  
+  </body>   
