@@ -217,7 +217,6 @@ img {
   font-size: 3rem;
   font-weight: 400;
   text-shadow: 2px 2px 0 var(--main-navy);
-  transition: transform 0.3s ease-out;
   color: var(--main-yellow);
 }
 
@@ -229,8 +228,12 @@ img {
   margin-top: 3px;
 }
 
-.profile-link:hover {
-  transform: translateY(6px);
+#contacts-grid > div {
+  transition: transform 0.3s ease-out;
+}
+
+#contacts-grid > div:hover{
+  transform: translateY(5px);
 }
 
 footer {
