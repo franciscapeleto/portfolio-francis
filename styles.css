@@ -222,10 +222,11 @@ img {
 }
 
 .contact-description {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   text-shadow: 2px 2px 0 var(--main-navy);
   color: var(--main-yellow);
+  margin-top: 3px;
 }
 
 .profile-link:hover {
