@@ -34,6 +34,12 @@ html {
   }   
 }
 
+@media (max-width: 22.5em) {
+  html {
+    font-size: 33%;
+  }   
+}
+
 body {
   font-family: 'Roboto Mono', monospace, sans-serif;
   font-size: 1.8rem;
@@ -213,6 +219,15 @@ img {
   margin: 0 auto;
 }  
 
+@media (max-width: 28.75em) {
+  #contacts {
+    padding: 6rem 1rem;
+  }
+
+  #contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .profile-link {
   font-size: 3rem;
   font-weight: 400;
