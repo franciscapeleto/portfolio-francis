@@ -223,6 +223,7 @@ img {
 
 .hidden-contact {
   visibility: hidden;
+  font-size: 1.5rem;
 }
 
 .profile-link:hover {
