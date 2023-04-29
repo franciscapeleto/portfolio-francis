@@ -221,17 +221,15 @@ img {
   color: var(--main-yellow);
 }
 
-.hidden-contact {
-  visibility: hidden;
-  font-size: 1.5rem;
+.contact-description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 0 var(--main-navy);
+  color: var(--main-yellow);
 }
 
 .profile-link:hover {
   transform: translateY(6px);
-}
-
-.profile-link:hover .hidden-contact {
-  visibility: visible;
 }
 
 footer {
